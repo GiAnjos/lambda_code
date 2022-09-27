@@ -48,6 +48,9 @@ When you click on test it will open a pop-up with the test configurations. Add a
 For the test template I used cloudwatch:
 ![image](https://user-images.githubusercontent.com/93729823/192649472-60f751fa-22b3-4408-85e9-966f9e8adc01.png)
 
+You can check the results of your test in the execution results tab:
+![image](https://user-images.githubusercontent.com/93729823/192650073-18e6463a-4c8b-4760-a23b-b933934b5cb8.png)
+
 Click deploy if you have the approval to do so and all done!! 
 
 
