@@ -1,7 +1,7 @@
 # lambda_code
 Here you can find a code for a lambda function that finds the latest file from a folder, moves it to a new folder and starts two workflows inside of AWS Glue.
 
-For the lambda function to work you need to do the proper configurations. First you need to create or find an existing role inside of AWS IAM with the areas of AWS that you need access to change. I will show here step-by-step of how I created my role and what permissions it has.
+For the lambda function to work you need to do the proper configurations. First you need to create or find an existing role inside of AWS IAM with the areas of AWS that you need access to change. I will show here step by step of how I created my role and what permissions it has.
 
 To create a role go to the area "roles" inside of IAM and select "Create":
 ![image](https://user-images.githubusercontent.com/93729823/192641111-8fdcdffe-0ad1-43a9-8559-d1a565804559.png)
@@ -27,6 +27,19 @@ Select the language that you are going to write your function. In this case Pyht
 
 For permissions you can search for the role that you created previously:
 ![image](https://user-images.githubusercontent.com/93729823/192645970-4b719c62-4b21-4acd-aaeb-78c682e9ed07.png)
+
+Go to your function and add a trigger so it knows when to start the function. My function was created to be triggered when a file gets posted in a the "OLDEST FOLDER" as you can see on the code. So lets go to the step by step.
+
+To create a trigger select S3 as a source:
+![image](https://user-images.githubusercontent.com/93729823/192646978-a5fe6f47-20c4-4ae2-96de-df983c7095dd.png)
+
+Put the name of the bucket that you are using for the project and add the prefix or suffix of the folder that you want. I added a prefix "OLDEST FOLDER/" for this project:
+![image](https://user-images.githubusercontent.com/93729823/192648248-a6a437c9-42db-44f5-8969-3e364796bbde.png)
+
+Don't forget to a acknowledge the following message and click add:
+![image](https://user-images.githubusercontent.com/93729823/192648370-d3dfc852-880e-4b23-8bd3-bb3181ef39ba.png)
+
+ 
 
 
 
