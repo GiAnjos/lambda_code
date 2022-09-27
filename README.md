@@ -39,7 +39,16 @@ Put the name of the bucket that you are using for the project and add the prefix
 Don't forget to a acknowledge the following message and click add:
 ![image](https://user-images.githubusercontent.com/93729823/192648370-d3dfc852-880e-4b23-8bd3-bb3181ef39ba.png)
 
- 
+Add the code in this area of your function and click test:
+![image](https://user-images.githubusercontent.com/93729823/192648808-1938d86e-9467-4bee-b6b7-05b4ed28a4e1.png)
+
+When you click on test it will open a pop-up with the test configurations. Add a name for your test and select if you want to share the test with others or not:
+![image](https://user-images.githubusercontent.com/93729823/192649222-f37763db-43fb-4d7d-9835-61c28d1692b8.png)
+
+For the test template I used cloudwatch:
+![image](https://user-images.githubusercontent.com/93729823/192649472-60f751fa-22b3-4408-85e9-966f9e8adc01.png)
+
+Click deploy if you have the approval to do so and all done!! 
 
 
 
